@@ -1,0 +1,23 @@
+:root {
+  --main-text-color: #2a2e34;
+  --second-text-color: #5f6771;
+  --main-thin-border: 1px solid #dedfe1;
+  --main-violet-color: #5f55ee;
+  --dark-violet-color: #544dc9;
+  --main-gray-color: #e8eaed;
+  --main-green-color: #008844;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.main-layout {
+  display: flex;
+}
+main {
+  width: 100%;
+}

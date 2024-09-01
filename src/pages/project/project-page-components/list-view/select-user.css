@@ -1,0 +1,73 @@
+.select-user {
+  padding: 9px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+  user-select: none;
+  font-size: 0.7rem;
+}
+.select-user:hover {
+  background-color: #d1d3d85b;
+}
+.users-list,
+.statuses-list {
+  position: absolute;
+  padding: 3px;
+  font-size: 0.7rem;
+  z-index: 1000;
+  background-color: white;
+  width: 100px;
+  border-radius: 7px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.empty {
+  opacity: 0.4;
+}
+.user-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-transform: capitalize;
+}
+.user-option:hover {
+  background-color: #d1d3d85e;
+}
+
+.statuses-list {
+  font-size: 0.9rem;
+  width: 170px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.section {
+  padding: 7px;
+  border-bottom: var(--main-thin-border);
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #838992;
+  padding: 8px 5px;
+}
+
+.section-name {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 7px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.section-name .absolute-div {
+  top: 25%;
+}
+.section-name:hover {
+  background-color: #b4b3b365;
+}

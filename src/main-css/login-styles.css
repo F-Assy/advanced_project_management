@@ -1,0 +1,91 @@
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  background: url("/login-background.png") no-repeat center center fixed; /* Adjust the path and image name as needed */
+  background-size: cover;
+}
+.auth-page .signup-message {
+  color: white;
+  font-size: 0.85rem;
+}
+.auth-page .signup-message a {
+  color: white;
+}
+.auth-form {
+  display: flex;
+  background: white;
+  flex-direction: column;
+  width: 25%;
+  gap: 20px;
+  border-radius: 12px;
+  padding: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form .auth-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.auth-form .auth-button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+  background: #6c27da;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.auth-form .auth-title {
+  margin: 0;
+}
+.input-container label {
+  font-size: 0.7rem;
+}
+.input-container input {
+  padding: 9px;
+  border-radius: 6px;
+  border: solid lightgray 1px;
+}
+.input-container input:focus {
+  outline: none;
+  border-color: gray;
+}
+.input-container input::placeholder {
+  color: rgb(175, 175, 175);
+}
+.negative {
+  color: red;
+}
+.error {
+  font-size: 0.75rem;
+}
+.spinner {
+  width: 10px;
+  height: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

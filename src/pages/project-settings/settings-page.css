@@ -1,0 +1,197 @@
+.settings-page {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+}
+
+.settings-page .title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.user-input-container {
+  display: flex;
+  position: relative;
+}
+
+.user-input-container .email-input {
+  padding: 0 8px;
+  height: 94%;
+  font-size: 0.95rem;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 2px 0 0 2px;
+}
+
+.user-input-container .email-input:focus {
+  outline: none;
+  border-color: rgb(60, 60, 60);
+}
+
+.user-input-container .add-button {
+  border: none;
+  background-color: var(--main-violet-color);
+  color: white;
+  text-transform: capitalize;
+  padding: 5px 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.select-membership {
+  position: relative;
+}
+.select-membership .current-membership {
+  user-select: none;
+  padding: 6px 20px;
+  cursor: pointer;
+  border-top: 1px solid rgb(189, 189, 189);
+  border-bottom: 1px solid rgb(189, 189, 189);
+  font-size: 0.8rem;
+  width: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-transform: capitalize;
+  gap: 5px;
+}
+.user-row .current-membership {
+  border: none !important;
+}
+.user-row .disabled {
+  color: var(--main-violet-color);
+  opacity: 0.6;
+  pointer-events: none;
+}
+.list-mark {
+  margin-top: 4px;
+  border: transparent solid 4px;
+  width: 0px;
+  border-top: rgb(29, 29, 29) 4px solid;
+}
+.memberships-list {
+  position: absolute;
+  z-index: 1000;
+  top: 25px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  font-size: 0.85rem;
+}
+.outer {
+  padding: 10px;
+  border-bottom: 1px rgb(224, 223, 223) solid;
+}
+.absolute-div {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.membership-container {
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 7px;
+  position: relative;
+}
+.membership-container:hover,
+.membership-container.selected {
+  background-color: rgba(226, 228, 226, 0.737);
+}
+.membership-container:last-child {
+  border-bottom: none;
+}
+.membership-container .description {
+  margin-top: 4px;
+  font-size: 0.67rem;
+  color: rgb(147, 146, 146);
+}
+.membership-container .label {
+  font-weight: 500;
+}
+.user-emails-list {
+  position: absolute;
+  font-size: 0.85rem;
+  width: 200px;
+  top: 10px;
+  list-style-type: none;
+  z-index: 1000;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.user-emails-list .user-email-option {
+  padding: 10px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.user-email-option:hover {
+  background-color: rgba(226, 228, 226, 0.737);
+}
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+
+.users-table {
+  border: var(--main-thin-border);
+  border-radius: 6px;
+  margin-top: 40px;
+  height: 100%;
+  max-height: 100%;
+  overflow: auto;
+  font-size: 0.7rem;
+}
+.users-table .table-header {
+  display: flex;
+  color: #adadad;
+  text-transform: uppercase;
+  border-bottom: var(--main-thin-border);
+}
+.users-table .table-header > div {
+  user-select: none;
+  padding: 10px 35px;
+  text-align: center;
+  width: 20%;
+}
+.medium-width {
+  width: 30% !important;
+  flex-shrink: 0;
+}
+.user-row {
+  display: flex;
+  align-items: center;
+}
+.user-row > div {
+  user-select: none;
+  padding: 10px 35px !important;
+  text-align: center;
+  width: 20%;
+}
+
+.owner-text {
+  padding: 3px;
+  width: 100%;
+  border-radius: 7px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: var(--main-violet-color);
+  border: var(--main-thin-border);
+  border-color: var(--main-violet-color);
+}
+
+.trash-icon {
+  transition: 0.2s;
+  border-radius: 7px;
+}
+.trash-icon:hover {
+  background-color: #e8879267;
+}

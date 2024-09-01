@@ -1,0 +1,104 @@
+.select-priority {
+  padding: 9px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.2s;
+  user-select: none;
+}
+.select-priority:hover {
+  background-color: #d1d3d867;
+}
+.select-priority img {
+  width: 14px;
+  height: 14px;
+  color: #343434;
+}
+.priorities-list {
+  position: absolute;
+  padding: 6px;
+  z-index: 20000;
+  font-size: 0.7rem;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  text-transform: capitalize;
+}
+.priorities-list .option {
+  padding: 5px;
+  padding-right: 25px;
+  border-radius: 5px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+.priorities-list .option:hover {
+  background-color: #d1d3d85e;
+}
+.option .text {
+  color: black;
+}
+.urgent {
+  color: red;
+}
+.high {
+  color: goldenrod;
+}
+.medium {
+  color: blue;
+}
+.low {
+  color: rgb(181, 178, 178);
+}
+
+.new-task-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 7px 0;
+}
+.inner-container {
+  width: 57%;
+  display: flex;
+  gap: 7px;
+  padding-left: 3.7%;
+  align-items: center;
+}
+
+.new-task-container .text-input {
+  background-color: transparent;
+  border: none;
+  font-size: 0.8rem;
+  width: 100%;
+}
+.text-input:focus {
+  outline: none;
+}
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+.buttons .cancel {
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 3px 5px;
+  color: rgb(135, 135, 135) !important;
+  transition: 0.2s;
+}
+.buttons .save {
+  border-radius: 6px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 3px 10px;
+  transition: 0.2s;
+  background-color: var(--main-violet-color);
+}
+.save:hover {
+  background-color: var(--dark-violet-color);
+}
+.cancel:hover {
+  background-color: #d1d3d85e !important;
+}

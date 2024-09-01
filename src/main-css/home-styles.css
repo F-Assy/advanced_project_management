@@ -1,0 +1,127 @@
+/* sidebar styles */
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100vh;
+  position: sticky;
+  z-index: 30000;
+  top: 0;
+  left: 0;
+  background-color: #f7f8f9;
+  border-right: var(--main-thin-border);
+  color: var(--main-text-color);
+}
+.sidebar-title {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 8px;
+  color: black;
+  border-bottom: var(--main-thin-border);
+}
+.sidebar-content {
+  padding: 15px;
+}
+.sidebar-content div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+  gap: 7px;
+  padding: 5px;
+  border-radius: 7px;
+  margin-bottom: 5px;
+}
+.sidebar-content .delete-container:hover {
+  background-color: #e8879267;
+}
+a {
+  text-decoration: none;
+}
+/*projects list styles */
+.projects-title-container {
+  padding: 4px 12px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--main-thin-border);
+}
+.projects-title-container .add-project-button {
+  background-color: var(--main-violet-color);
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.add-project-button:hover {
+  background-color: var(--dark-violet-color);
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  gap: 5px;
+}
+.big-spinner {
+  width: 23px;
+  opacity: 0.5;
+  height: 23px;
+  border: 3px solid #541eab57;
+  border-top: 3px solid #6c27da;
+}
+.projects-list .project-label {
+  width: 85%;
+  display: flex;
+  font-size: 0.9rem;
+  text-decoration: none;
+  gap: 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  padding: 7px;
+  padding-left: 28px;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+.projects-list .project-label:hover,
+.sidebar .selected {
+  background-color: #e5e4fc;
+  color: var(--dark-violet-color);
+}
+
+.create-project-message {
+  height: 100vh;
+  flex-direction: column;
+  gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.create-project-message .add-project {
+  padding: 10px;
+  border: none;
+  background-color: var(--main-violet-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.1s;
+}
+.create-project-message .add-project:hover {
+  background-color: var(--dark-violet-color);
+}
+.no-projects-message {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}

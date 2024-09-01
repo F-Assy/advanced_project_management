@@ -1,0 +1,262 @@
+{
+  "users": [
+    {
+      "id": "92d8",
+      "full_name": "User 1 ",
+      "email": "user1@email.com",
+      "password": "admin"
+    },
+    {
+      "id": "1234",
+      "full_name": "User 2",
+      "email": "user2@email.com",
+      "password": "admin"
+    },
+    {
+      "id": "4321",
+      "full_name": "User 3",
+      "email": "user3@email.com",
+      "password": "admin"
+    },
+    {
+      "id": "234",
+      "full_name": "User 4",
+      "email": "user4@email.com",
+      "password": "admin"
+    },
+    {
+      "id": "ef77",
+      "full_name": "fatima",
+      "email": "elassifatima@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "projects": [
+    {
+      "id": "4160",
+      "ownerId": "92d8",
+      "name": "our first project",
+      "users": [
+        {
+          "id": "92d8",
+          "full_name": "User 1 ",
+          "email": "user1@email.com",
+          "role": "owner"
+        },
+        {
+          "id": "234",
+          "full_name": "User 4",
+          "email": "user4@email.com",
+          "role": "admin"
+        }
+      ]
+    },
+    {
+      "id": "fbef",
+      "ownerId": "92d8",
+      "name": "new project 1",
+      "users": [
+        {
+          "id": "92d8",
+          "full_name": "User 1 ",
+          "email": "user1@email.com",
+          "role": "owner"
+        }
+      ]
+    },
+    {
+      "id": "e738",
+      "ownerId": "92d8",
+      "name": "new project 2",
+      "users": [
+        {
+          "id": "92d8",
+          "full_name": "User 1 ",
+          "email": "user1@email.com",
+          "role": "owner"
+        }
+      ]
+    },
+    {
+      "id": "c796",
+      "ownerId": "ef77",
+      "name": "react project",
+      "users": [
+        {
+          "id": "ef77",
+          "full_name": "fatima",
+          "email": "elassifatima@gmail.com",
+          "role": "owner"
+        }
+      ]
+    },
+    {
+      "id": "182d",
+      "ownerId": "ef77",
+      "name": "javascrip project",
+      "users": [
+        {
+          "id": "ef77",
+          "full_name": "fatima",
+          "email": "elassifatima@gmail.com",
+          "role": "owner"
+        },
+        {
+          "id": "234",
+          "full_name": "User 4",
+          "email": "user4@email.com",
+          "role": "member"
+        }
+      ]
+    },
+    {
+      "id": "def4",
+      "ownerId": "234",
+      "name": "bio",
+      "users": [
+        {
+          "id": "234",
+          "full_name": "User 4",
+          "email": "user4@email.com",
+          "role": "owner"
+        },
+        {
+          "id": "ef77",
+          "full_name": "fatima",
+          "email": "elassifatima@gmail.com",
+          "role": "guest"
+        }
+      ]
+    }
+  ],
+  "projectUsers": [
+    {
+      "id": "fa58",
+      "projectId": "4160",
+      "userId": "92d8",
+      "role": "owner"
+    },
+    {
+      "id": "5461",
+      "projectId": "fbef",
+      "userId": "92d8",
+      "role": "owner"
+    },
+    {
+      "id": "6eca",
+      "projectId": "e738",
+      "userId": "92d8",
+      "role": "owner"
+    },
+    {
+      "id": "acb4",
+      "projectId": "4160",
+      "userId": "234",
+      "role": "admin"
+    },
+    {
+      "id": "f596",
+      "projectId": "c796",
+      "userId": "ef77",
+      "role": "owner"
+    },
+    {
+      "id": "38cf",
+      "projectId": "182d",
+      "userId": "ef77",
+      "role": "owner"
+    },
+    {
+      "id": "c07f",
+      "projectId": "182d",
+      "userId": "234",
+      "role": "member"
+    },
+    {
+      "id": "bc21",
+      "projectId": "def4",
+      "userId": "234",
+      "role": "owner"
+    },
+    {
+      "id": "d32a",
+      "projectId": "def4",
+      "userId": "ef77",
+      "role": "guest"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "f02a",
+      "projectId": "4160",
+      "name": "first task",
+      "priority": "high",
+      "assignee": null,
+      "status": "todo"
+    },
+    {
+      "id": "0688",
+      "projectId": "4160",
+      "name": "second task",
+      "priority": "medium",
+      "assignee": null,
+      "status": "complete"
+    },
+    {
+      "id": "4394",
+      "projectId": "4160",
+      "name": "third task",
+      "priority": "low",
+      "assignee": null,
+      "status": "complete"
+    },
+    {
+      "id": "8f7c",
+      "projectId": "fbef",
+      "name": "task",
+      "priority": null,
+      "assignee": null,
+      "status": "todo"
+    },
+    {
+      "id": "e213",
+      "projectId": "182d",
+      "name": "iterating",
+      "priority": "medium",
+      "assignee": "fatima",
+      "status": "todo"
+    },
+    {
+      "id": "3f15",
+      "projectId": "182d",
+      "name": "dom",
+      "priority": "high",
+      "assignee": "User 4",
+      "status": "todo"
+    },
+    {
+      "id": "fd0b",
+      "projectId": "4160",
+      "name": "map()",
+      "priority": "high",
+      "assignee": "User 1 ",
+      "status": "progress"
+    },
+    {
+      "id": "8cbc",
+      "projectId": "def4",
+      "name": "micro",
+      "priority": null,
+      "assignee": null,
+      "status": "todo"
+    },
+    {
+      "id": "e17f",
+      "projectId": "182d",
+      "name": "filter()",
+      "priority": "urgent",
+      "assignee": null,
+      "status": "todo"
+    }
+  ]
+}

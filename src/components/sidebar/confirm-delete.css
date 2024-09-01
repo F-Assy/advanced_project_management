@@ -1,0 +1,66 @@
+.confirm-delete-modal {
+  margin-top: 150px;
+  border-radius: 6px;
+  background-color: white;
+  width: 400px;
+}
+.confirm-delete-modal .buttons {
+  border-top: 1px lightgrey solid;
+  padding: 10px;
+  display: flex;
+  background-color: #ededed;
+  border-radius: 0 0 6px 6px;
+  gap: 8px;
+}
+.confirm-delete-modal .buttons div {
+  width: 100%;
+  cursor: pointer;
+  padding: 8px 20px;
+  text-transform: capitalize;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.confirm-delete-modal .buttons .cancel {
+  background-color: white;
+  border: 1px solid lightgrey;
+  color: black;
+  text-align: center;
+}
+
+.confirm-delete-modal .buttons .delete {
+  background-color: #f45950;
+  border: 1px solid #f45950;
+  color: white;
+  text-align: center;
+}
+
+.confirm-delete-modal header {
+  font-weight: 500;
+  font-size: 1.15rem;
+  padding: 20px;
+  padding-bottom: 2px;
+}
+
+.confirm-delete-modal .main-text {
+  padding: 18px;
+  font-size: 0.85rem;
+  background-color: rgba(254, 178, 178, 0.435);
+  color: rgb(235, 69, 69);
+  margin: 15px 20px;
+  border-radius: 8px;
+}
+
+.logout-button {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+.logout-button:hover {
+  background-color: #e8879267;
+}

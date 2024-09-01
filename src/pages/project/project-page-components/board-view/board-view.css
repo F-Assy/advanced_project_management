@@ -1,0 +1,113 @@
+.groups-container {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  align-items: start;
+}
+.tasks-group {
+  width: 250px;
+  flex-shrink: 0;
+  background-color: #f3f4f5;
+  padding: 7px;
+  border-radius: 5px;
+}
+.tasks-group header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 0.85rem;
+  padding-bottom: 6px;
+  gap: 10px;
+  color: #5f6771;
+}
+.tasks-group.progress {
+  background-color: #e6e3f7;
+}
+.tasks-group.complete {
+  background-color: #e3f5ec;
+}
+.group-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: auto;
+}
+.task-card {
+  position: relative;
+  background-color: white;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  padding: 10px;
+  border: var(--main-thin-border);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.task-card:hover .delete-icon {
+  opacity: 1;
+}
+.current-status {
+  padding: 4px 9px;
+  transition: 0.2s;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.current-status:hover {
+  background-color: #d1d3d867;
+}
+.delete-icon {
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s;
+  top: 6px;
+  right: 6px;
+  padding: 0 2px;
+  border: 1px gray solid;
+  border-radius: 3px;
+}
+.svg-settings-icon {
+  color: pink;
+  width: 20px;
+  height: 20px;
+}
+
+.tasks-group .add-task {
+  border: none;
+  width: 100%;
+  font-size: 0.8rem;
+  background-color: transparent;
+  color: var(--second-gray-color);
+  text-align: start;
+  padding: 6px;
+  border-radius: 6px;
+  transition: 0.2s;
+  cursor: pointer;
+  margin-top: 7px;
+}
+.tasks-group .add-task:hover {
+  background-color: rgba(82, 81, 81, 0.08);
+}
+
+.new-task-card input,
+.task-card input {
+  padding: 3px;
+  width: 95%;
+  border-radius: 8px;
+  border: var(--main-thin-border);
+}
+.new-task-card input:focus,
+.task-card input {
+  outline: none;
+}
+.new-task-card .buttons {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+}
+.task-card .task-name {
+  padding: 4px;
+}
